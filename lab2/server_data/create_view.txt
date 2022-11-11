@@ -1,0 +1,2 @@
+CREATE MATERIALIZED VIEW default.alexander_vikhlyantsev_lab02_in_mv TO default.alexander_vikhlyantsev_lab02_rt AS
+SELECT * FROM default.alexander_vikhlyantsev_lab02_in;

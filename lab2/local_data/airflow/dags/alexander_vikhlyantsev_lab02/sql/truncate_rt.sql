@@ -1,0 +1,1 @@
+TRUNCATE TABLE alexander_vikhlyantsev_lab02_rt;

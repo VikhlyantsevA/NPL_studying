@@ -1,0 +1,4 @@
+config_samples
+.venv
+.idea
+env.conf

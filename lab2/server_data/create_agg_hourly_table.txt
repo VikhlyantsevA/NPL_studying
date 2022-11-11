@@ -1,0 +1,13 @@
+CREATE TABLE default.alexander_vikhlyantsev_lab02_agg_hourly
+(
+	ts_start DateTime,
+	ts_end DateTime,
+    revenue Integer,
+    buyers Integer,
+    visitors Integer,
+    purchases Integer,
+    aov Float32
+) ENGINE = MergeTree()
+    PARTITION BY toYYYYMM(ts_start)
+    ORDER BY ts_start
+    SETTINGS index_granularity = 8192;
